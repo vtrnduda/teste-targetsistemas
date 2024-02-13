@@ -26,7 +26,7 @@ df = pd.DataFrame({
 total = df.sum().sum()
 print(total)
 
-#fórmula da porcentagem: (parte/todo) * 100
+# Fórmula da porcentagem: (parte/todo) * 100
 percentual = ((df / total) * 100).round(2)
 
 # Exibindo os resultados
@@ -34,7 +34,7 @@ print(f'O valor total de faturamento foi: R$ {total:.2f}')
 print('O percentual de representação de cada estado foi:')
 print(percentual)
 
-#Salvar em um csv para futuras avaliações e tomadas de decisão
+# Salvar em um csv para futuras avaliações e tomadas de decisão
 path = 'percentual.csv'
 percentual.to_csv(path, index=False, sep=';')
 
